@@ -1,0 +1,7 @@
+function (doc) {
+  if (doc.commits) {
+    doc.commits.forEach(function(commit) {
+      emit(commit.author.username, 1);
+    });
+  }
+}
